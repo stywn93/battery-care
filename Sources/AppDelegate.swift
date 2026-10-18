@@ -115,7 +115,8 @@ public class AppDelegate: NSObject, NSApplicationDelegate, NSPopoverDelegate {
         let image = MenuBarBatteryRenderer.render(
             percentage: snapshot.percentage,
             isCharging: snapshot.isCharging,
-            isPluggedIn: snapshot.isPluggedIn
+            isPluggedIn: snapshot.isPluggedIn,
+            isFullyCharged: snapshot.isFullyCharged
         )
         button.image = image
         button.imagePosition = .imageLeading
